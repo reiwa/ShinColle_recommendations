@@ -10,7 +10,7 @@ Chinese version
 #### Effect : 纹理显示错误、右键单击地砖时库存物品交换或消失、可能出现意外错误
 #### Cause : 遗漏了瓦片实体删除流程的实施。
 
-#### How to fix : 添加了瓦片实体删除程序。
+#### How to fix : 添加瓦片实体删除程序。
 
 shincolle/block/BlockDesk.java
 
