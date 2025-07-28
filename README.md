@@ -33,7 +33,7 @@ shincolle/block/BlockDesk.java
 #### Effect : 体能显示错误，实际最大体能下降？
 #### Cause : 超出 Metamorph MOD 规范，通过 .getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue() 对最大生命值进行覆盖的混战
 
-#### How to fix : 使用 morph.settings 指定最大适合度
+#### How to fix : 使用 morph.settings 指定最大生命值
 
 shincolle/intermod/MetamorphHelper.java
 
@@ -231,8 +231,8 @@ shincolle/handler/EventHandler.java
 ## 优先权 : ■■□□□
 
 #### Issue : 深海船只不能使用梯子上下。
-#### Effect : 玩家等待深海船传送的时间
-#### Cause : 机载 A* 搜索算法不具备识别梯子的能力。
+#### Effect : 导致玩家需要等待深海棲艦传送。
+#### Cause : 实体自带的 A* 搜索算法不具备识别梯子的能力。
 
 #### How to fix : 使用补丁加强深海船只的腿脚。
 
